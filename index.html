@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d9a42779e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1 class = "hello"> Hello, I'm <b class = "my-name">Aarav.</b> Welcome to my website!</h1>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------------about------------------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="aarav" src="images/Aarav_Headshot.JPG" height = "450" width = "250" alt = "Aarav Modi">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="description">I am a sophomore at Rutgers University pursuing a degree in Computer Science and Business Analytics. 
+                    My career interests include but are not limited to Software Engineering, Cyber Security, and Artificial Intelligence. With technology constantly evolving,
+                    I find it necessary to understand its capabilities and use them to help people. One of the biggest threats that come with the
+                    evolution of technology are cyber attacks. Reading about the stories of hacking and cyber warfare between Russia and Ukraine
+                    sparked my interest in cyber security, and the significance of its role in protecting personal information and national infrastructures.
+                    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('relevant coursework')">Relevant Coursework</p>
+                    <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                </div>
+                <div class="tab-contents active-tab" id = "education">
+                    <ul>
+                        <li><span>2021 - Present</span><br>B.S. in Computer Science + Business Analytics at Rutgers University</li>
+                        <li><span>2017 - 2021</span><br>Monroe Township High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span><a href="https://www.credly.com/badges/0e34c2df-4a9a-4a13-aa9a-7b6a3081cd1b/public_url">AWS Cloud Practitioner</a></span></li>
+                        <li><span>Object Oriented Programming</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "relevant coursework">
+                    <ul>
+                        <li><span>Computer Science</span><br>Data Structures, Computer Architecture, Principles of Programming Languages</li>
+                        <li><span>Mathematics</span><br>Calculus 1, Calculus 2, Linear Algebra, Discrete Structures</li>
+                        <li><span>Business</span><br>Financial Accounting, Macroeconomics, Statistics for Business</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "interests">
+                    <ul>
+                        <li><span>Tennis</span><br>GMC 1st Singles Champion, NJ All Red-Division Team</li>
+                        <li><span>Ukulele</span><br>Riptide, Renegades, Chand Sifarish</li>
+                        <li><span>Dystopian Novels</span><br>Percy Jackson, Harry Potter, Maze Runner, Hunger Games</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------experiences-------------------------------------------------->
+<div id="experiences">
+    <div class="container">
+        <h1 class="sub-title">My Experiences</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-basketball"></i>
+                <h2>Software Engineer Intern @ NBA</h2>
+                <p>Aided in development of newly owned and operated platform known as NextGen Initiative</p>
+                <a href="https://www.nba.com">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-helicopter"></i>
+                <h2>Incoming Software Engineer Intern @ Lockheed Martin</h2>
+                <p>Working on Mark 41 VLS with Rotary & Mission Systems Team</p>
+                <a href="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/naval-launchers-and-munitions/MK41-VLS-product-card.pdf">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Accelerator Mentee @ Rutgers MAD</h2>
+                <p>Chosen as 1/25 members from over 200 applicants to participate in Android course for Mobile App Development club</p>
+                <a href="https://rumad.club/#about">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------portfolio------------------------------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/PreReq.png">
+                <div class="layer">
+                    <h3>Prerequisite Checker</h3>
+                    <p>Java program allowing users to input Rutgers CS college courses in a syllabus structure to assist with course scheduling</p>
+                    <a href="https://github.com/USMC1941/CS112-Rutgers/tree/master/Assignments/PreReqChecker"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Huffman.png">
+                <div class="layer">
+                    <h3>Huffman Coding Algorithm</h3>
+                    <p>Java application employing a lossless data compression algorithm to encode/decode files</p>
+                    <a href="https://github.com/USMC1941/CS112-Rutgers/tree/master/Assignments/HuffmanCoding"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/OneShotLearning.jpg">
+                <div class="layer">
+                    <h3>One Shot Learning</h3>
+                    <p>C application that implements a “one shot” learning algorithm that uses historical data to predict house prices based on particular attributes.</p>
+                    <a href="https://github.com/USMC1941/CS112-Rutgers/tree/master/Assignments/Transit"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/amodi4" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------------------------------------------contact-------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>aaravrmodi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(505) 859-9000</p>
+                <div class="social-icons">
+                    <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aarav-modi/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/AaravModi-resume.pdf" download class = "btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name = "email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2">Submit</button>
+                </form>
+                <span id="msg">
+
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
