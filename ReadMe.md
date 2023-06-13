@@ -1,1 +1,1 @@
-Welcome to my personal website! I've included some background info, previous experiences, and some projects I've worked on in the past. Feel free to reach out at aaravrmodi@gmail.com if you have any questions!
+Welcome to my personal website! I've included some background info, previous experiences, and some projects I've worked on in the past. You can access the website at https://amodi4.github.io/personal-website/index.html#. Feel free to reach out at aaravrmodi@gmail.com if you have any questions!
